@@ -1,5 +1,5 @@
 {
-	"好工具": {
+	"提瓦特好工具": {
         "icon": "",
         "data": [
             {
@@ -38,9 +38,9 @@
                 "describe": "小说人的天堂"
             },
             {
-                "name": "233博客",
-                "icon": "./assets/icon.ico",
-                "url": "https://233i.cn/",
+                "name": "分流抢票",
+                "icon": "./assets/siteIcons/fenliu.png",
+                "url": "https://www.bypass.cn/",
                 "describe": "本站作者常年拖更的博客"
             },
             {
