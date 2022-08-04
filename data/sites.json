@@ -50,12 +50,6 @@
         "describe": "天翼云盘资源收集分享"
       },
       {
-        "name": "电脑麻将",
-        "icon": "./assets/siteIcons/majiang.png",
-        "url": "https://tool.liumingye.cn/majiang/",
-        "describe": "玩会麻将吧"
-      },
-      {
         "name": "xmanhua漫画",
         "icon": "./assets/siteIcons/Xmanhua.png",
         "url": "https://www.xmanhua.com/",
@@ -89,6 +83,24 @@
         "icon": "./assets/siteIcons/majiang.png",
         "url": "https://tool.liumingye.cn/majiang/",
         "describe": "玩会麻将吧"
+      },
+      {
+        "name": "我的世界",
+        "icon": "./assets/siteIcons/wdsj.png",
+        "url": "https://classic.minecraft.net/",
+        "describe": "是的~网页版我的时间 够你玩一天了"
+      },
+      {
+        "name": "网上冲浪",
+        "icon": "./assets/siteIcons/chonglang.png",
+        "url": "edge://surf/",
+        "describe": "Edge浏览器专属小游戏"
+      },
+      {
+        "name": "随便乱画",
+        "icon": "./assets/siteIcons/luanhua.png",
+        "url": "https://www.autodraw.com/",
+        "describe": "随便乱画,心情不好就来乱画一通吧"
       }
     ]
   },
@@ -126,13 +138,13 @@
       },
       {
         "name": "显卡天梯榜",
-        "icon": "./assets/siteIcons/e.png",
+        "icon": "./assets/siteIcons/e.ico",
         "url": "https://topic.expreview.com/GPU/",
         "describe": "显卡天梯榜"
       },
       {
         "name": "CPU天梯榜",
-        "icon": "./assets/siteIcons/e.png",
+        "icon": "./assets/siteIcons/e.ico",
         "url": "https://topic.expreview.com/CPU/",
         "describe": "CPU天梯榜"
       },
