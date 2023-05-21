@@ -21,3 +21,6 @@
  #nav a:hover {
  /*background-color: #060;*/
  }
+
+.sidebar-menu-inner .sidebar-item .sidebar-item >ul>li a span{margin-left:60px}
+.sidebar-menu-inner ul li ul li a{margin-left:36px}
