@@ -56,8 +56,6 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 
     # 我们自己的应用
-    'apps.website',
-    'apps.QWebStack',
     'apps.QWebStack2',
 ]
 
