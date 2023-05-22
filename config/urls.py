@@ -14,9 +14,9 @@ from drf_yasg import openapi
 from config.django_starter import project_info
 
 urlpatterns = [
-    path('', include('apps.website.urls')),
-    path('q/', include('apps.QWebStack.urls')),
-    path('q2/', include('apps.QWebStack2.urls')),
+    # path('', include('apps.website.urls')),
+    # path('q/', include('apps.QWebStack.urls')),
+    path('', include('apps.QWebStack2.urls')),
 
     # DjangoStarter
     path('django-starter/', include('django_starter.urls')),
