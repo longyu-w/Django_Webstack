@@ -3,12 +3,13 @@ from django.shortcuts import render
 # Create your views here.
 
 from django.shortcuts import render
-from .models import Category, SubCategory, Site
+from .models import Category, SubCategory, Site,titles
 
 # Create your views here.
 
 def index_view(request):
     cates = Category.objects.all()
+    titless = titles.objects.all()
     total = []
     for cate in cates:
         subcates = SubCategory.objects.filter(parent=cate)
@@ -18,6 +19,7 @@ def index_view(request):
             c_res['subcate'].append({'subcate':subcate,'sites':sites})
         total.append(c_res)
     context = {
+        "titles": titless,
         "data": total
     }
     return render(request, 'Qwebstack2/index.html', context=context)
