@@ -2,7 +2,7 @@ import os
 
 from config.django_starter import config_django_starter
 from config.logging import config_logging, config_debug_logging
-# from config.caches import config_caches
+from config.caches import config_caches
 from config.rest_framework import config_rest_framework
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -142,7 +142,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = f'/{URL_PREFIX}media/'
 
 # # 配置redis缓存
-# CACHES = config_caches(DOCKER)
+CACHES = config_caches(DOCKER)
 
 # Drf 配置
 REST_FRAMEWORK = config_rest_framework()

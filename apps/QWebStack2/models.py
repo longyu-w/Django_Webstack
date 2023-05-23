@@ -4,7 +4,7 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField("类别名称", max_length=10)
-    icon = models.CharField('图标', max_length=20, default='linecons-lightbulb')
+    icon = models.CharField('图标', max_length=20, default='fa-star')
 
     class Meta:
         verbose_name = "分类"

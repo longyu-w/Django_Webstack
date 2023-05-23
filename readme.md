@@ -56,4 +56,7 @@ python install -r requirements.txt
 
 ```
 
+左列图标请参考[FontAwsome](https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87)将分类中图标改为想要的图标关键词即可
+
+
 然后运行就可以拉,再报错就看看版本之类的吧
