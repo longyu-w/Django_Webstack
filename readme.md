@@ -27,7 +27,7 @@ Demo: https://www.longyu.cool
 
 ### 主页
 
-![](docs\images\image-20230523100202014.png)
+![](docs/images/image-20230523100202014.png)
 
 ### 管理后台
 
