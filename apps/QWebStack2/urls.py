@@ -1,8 +1,24 @@
-# -*- coding: utf-8 -*-
-from django.urls import path
-from .views import index_view, test_view
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from . import views
+
+from .viewsets import *
+
+router = DefaultRouter()
+
+router.register('titles', TitlesViewSet, basename='titles')
+
+router.register('category', CategoryViewSet, basename='category')
+
+router.register('sub_category', SubCategoryViewSet, basename='sub_category')
+
+router.register('site', SiteViewSet, basename='site')
+
+router.register('friendlink', friendlinkViewSet, basename='friendlink')
+
+
 
 urlpatterns = [
-    path('', index_view, name='index'),  # 主页，自然排序
-    path('test/', test_view, name='test'),
+    path('',views.index_view),
+    # path('', include(router.urls))
 ]

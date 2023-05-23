@@ -7,9 +7,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#f9f9f9">
-    <title>提瓦特爱好家协会</title>
+    <title>{{ titles.name }}</title>
     <link rel="shortcut icon" href="{% static 'webstack2/assets/images/favicon.png' %}">
-    <meta name="keywords" content="提瓦特爱好家协会">
+    <meta name="keywords" content="{{ titles.name }}">
 
     <link rel='stylesheet' id='block-library-css'
           href="{% static 'webstack2/assets/css/block-library.min-5.6.2.css' %}" type='text/css' media='all'>
@@ -40,7 +40,6 @@
         })();
     </script>
     <!-- end 百度统计 -->
-
 
 
 </head>
@@ -101,7 +100,7 @@
             }
         }
     </style>
-    <div class="loader">提瓦特爱好家协会导航站</div>
+    <div class="loader">{{ titles.titleloader }}</div>
 </div>
 
 <div class="page-container">
@@ -113,16 +112,16 @@
                     <a href="" class="logo-expanded">
                         <img src="{% static "webstack2/assets/images/bt8-expand-light.png" %}" height="40"
                              class="logo-light"
-                             alt="提瓦特爱好家协会">
+                             alt="{{ titles.name }}">
                         <img src="{% static "webstack2/assets/images/bt8-expand-dark.png" %}" height="40"
                              class="logo-dark d-none"
-                             alt="提瓦特爱好家协会">
+                             alt="{{ titles.name }}">
                     </a>
                     <a href="" class="logo-collapsed">
                         <img src="{% static "webstack2/assets/images/bt.png" %}" height="40" class="logo-light"
-                             alt="提瓦特爱好家协会">
+                             alt="{{ titles.name }}">
                         <img src="{% static "webstack2/assets/images/bt.png" %}" height="40" class="logo-dark d-none"
-                             alt="提瓦特爱好家协会">
+                             alt="{{ titles.name }}">
                     </a>
                 </div>
                 <!-- logo end -->
@@ -187,11 +186,11 @@
             <div id="header" class="page-header sticky">
                 <div class="navbar navbar-expand-md">
                     <div class="container-fluid p-0">
-                        <a href="" class="navbar-brand d-md-none" title="提瓦特爱好家协会">
+                        <a href="" class="navbar-brand d-md-none" title="{{ titles.name }}">
                             <img src="{% static 'webstack2/assets/images/bt.png' %}" class="logo-light"
-                                 alt="提瓦特爱好家协会">
+                                 alt="{{ titles.name }}">
                             <img src="{% static 'webstack2/assets/images/bt.png' %}" class="logo-dark d-none"
-                                 alt="提瓦特爱好家协会">
+                                 alt="{{ titles.name }}">
                         </a>
 
                         <div class="collapse navbar-collapse order-2 order-md-1">
@@ -610,8 +609,11 @@
             </h4>
             <div class="friendlink text-xs card">
                 <div class="card-body">
-                    <a href="https://bioitee.com/" title="BioIT爱好者" target="_blank">BioIT爱好者</a>
-                    <a href="https://www.iiice.cn" title="下次一定" target="_blank">下次一定</a>
+                    {% for fri in fritotal %}
+                        <a href="{{ fri.url }}" title="{{ fri.name }}" target="_blank">{{ fri.name }}</a>
+                    {% endfor %}
+{#                    <a href="https://bioitee.com/" title="BioIT爱好者" target="_blank">BioIT爱好者</a>#}
+{#                    <a href="https://www.iiice.cn" title="下次一定" target="_blank">下次一定</a>#}
                 </div>
             </div>
         </div>
@@ -639,9 +641,10 @@
             </div>
             <div class="footer-inner">
                 <div class="footer-text">
-                    '本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：longyu_w@foxmail.com
-                    <br/>&copy; 2021 - {year} By [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) | [Bio IT
-                    爱好者](https://www.bioitee.com/) | [冀ICP备2022000685号-1](https://beian.miit.gov.cn)'
+                    {{ titles.end }}
+                    {#                    '本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：longyu_w@foxmail.com#}
+                    {#                    <br/>&copy; 2021 - {year} By [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) | [Bio IT#}
+                    <a href="https://beian.miit.gov.cn">冀ICP备2022000685号-1</a>
                     <br/>
                     {{ now.Year }}
                 </div>
