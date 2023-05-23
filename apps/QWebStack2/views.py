@@ -46,3 +46,5 @@ def test_view(request):
     #                 s = Site(name=data[-2],describtion=data[-1],url=data[1],logo_url=data[2],category=sub.first())
     #                 s.save()
     return
+
+
