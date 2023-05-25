@@ -7,7 +7,7 @@ def config_caches(is_docker: bool):
             'LOCATION': [
                 'redis://redis:6379/0' if is_docker else 'redis://localhost:6379/1',
             ],
-            'KEY_PREFIX': 'django_starter',  # 项目名当做文件前缀
+            'KEY_PREFIX': 'django_starter_daohang',  # 项目名当做文件前缀
             'OPTIONS': {
                 'CLIENT_CLASS': 'django_redis.client.DefaultClient',  # 连接选项(默认，不改)
                 'CONNECTION_POOL_KWARGS': {

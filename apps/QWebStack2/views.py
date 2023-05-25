@@ -1,13 +1,17 @@
 from django.shortcuts import render
-
+from django.views.decorators.cache import cache_page
 # Create your views here.
 
 from django.shortcuts import render
 from .models import Category, SubCategory, Site, Titles, friendlink
-
+from django.http import HttpResponse
+from django.template.loader import render_to_string
+from django.conf import settings
+import os
 
 # Create your views here.
-
+# context = {}
+# @cache_page(60 * 15)
 def index_view(request):
     cates = Category.objects.all()
     titless = Titles.objects.all()
@@ -48,3 +52,15 @@ def test_view(request):
     return
 
 
+def static_my_view(request):
+    # 非管理员用户不显示静态化页面
+    if not request.user.is_superuser:
+        return index_view(request)
+
+    # 静态化
+    html_content = render_to_string('my_template.html', context)
+    file_path = os.path.join(settings.STATIC_ROOT, 'html', 'my_template.html')
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, 'w') as f:
+        f.write(html_content)
+    return HttpResponse(html_content)
