@@ -10,7 +10,7 @@
     <title>{{ titles.name }}</title>
     <link rel="shortcut icon" href="{% static 'webstack2/assets/images/favicon.png' %}">
     <meta name="keywords" content="{{ titles.name }}">
-
+    <link rel="stylesheet" href="{% static 'webstack2/assets/css/yuanshenfont/iconfont.css' %}">
     <link rel='stylesheet' id='block-library-css'
           href="{% static 'webstack2/assets/css/block-library.min-5.6.2.css' %}" type='text/css' media='all'>
     <link rel='stylesheet' id='iconfont-css' href='{% static 'webstack2/assets/css/iconfont-3.03029.1.css' %}'
@@ -220,8 +220,8 @@
                                     </a>
                                     <ul class="sub-menu">
                                         {#                                        {{ range .list }}#}
-                                        <li><a href="#">暂定</a></li>
-                                        <li><a href="#">暂定2</a></li>
+                                        <li><a href="https://space.bilibili.com/90158726">暂定</a></li>
+                                        <li><a href="https://jq.qq.com/?_wv=1027&k=enAkFwd3">提瓦特群</a></li>
                                         {{ end }}
                                     </ul>
                                 </li>
@@ -623,6 +623,11 @@
         </div>
         <footer class="main-footer footer-type-1 text-xs">
             <div id="footer-tools" class="d-flex flex-column">
+                <a href="https://jq.qq.com/?_wv=1027&k=enAkFwd3" class="btn rounded-circle kefu m-1" target="_blank"
+                   data-toggle="tooltip" data-placement="left" title="云崽web">
+                    <span class="icon iconfont icon-amber"></span>
+                </a>
+
                 <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
                     <i class="iconfont icon-to-up"></i>
                 </a>
@@ -631,12 +636,12 @@
                    rel="search" one-link-mark="yes">
                     <i class="iconfont icon-search"></i>
                 </a>
+
                 <a href="https://jq.qq.com/?_wv=1027&k=enAkFwd3" class="btn rounded-circle kefu m-1" target="_blank"
                    data-toggle="tooltip" data-placement="left" title="联系我们">
                     <i class="mode-ico iconfont icon-qq"></i>
                 </a>
                 <!-- 右下角搜索 end -->
-
                 <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'"
                    class="btn rounded-circle switch-dark-mode m-1" id="yejian"
                    data-toggle="tooltip" data-placement="left" title="夜间模式">

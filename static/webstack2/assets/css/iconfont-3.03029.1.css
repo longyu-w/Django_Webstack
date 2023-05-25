@@ -5,6 +5,7 @@
   url('fonts/iconfont-1616676273262.woff') format('woff'),
   url('fonts/iconfont-1616676273262.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
   url('https://nav.iowen.cn/wp-content/themes/onenav/css/fonts/iconfont.svg?t=1616676273262#iconfont') format('svg'); /* iOS 4.1- */
+
 }
 
 .iconfont {
@@ -14,6 +15,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.icon-amber:before {
+  content: "\e615";
+}
+
+.icon-electro:before {
+  content: "\e600";
+}
+
+.icon-electro1:before {
+  content: "\e601";
+}
+
+.icon-geo:before {
+  content: "\e602";
+}
+
+.icon-pyro:before {
+  content: "\e603";
+}
+
 
 .icon-shangchuan:before {
   content: "\e637";

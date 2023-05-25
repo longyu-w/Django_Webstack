@@ -1,0 +1,44 @@
+{
+  "id": "4086701",
+  "name": "原神导航站",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "23259908",
+      "name": "amber",
+      "font_class": "amber",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "31496808",
+      "name": "electro-copy",
+      "font_class": "electro",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "31531653",
+      "name": "electro-copy",
+      "font_class": "electro1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "32142045",
+      "name": "geo-copy",
+      "font_class": "geo",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "32737184",
+      "name": "pyro-copy",
+      "font_class": "pyro",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}

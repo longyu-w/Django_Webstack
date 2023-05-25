@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "iconfontyuan"; /* Project id 4086701 */
+  src: url('iconfont.woff2?t=1684998630122') format('woff2'),
+       url('iconfont.woff?t=1684998630122') format('woff'),
+       url('iconfont.ttf?t=1684998630122') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfontyuan" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-amber:before {
+  content: "\e615";
+}
+
+.icon-electro:before {
+  content: "\e600";
+}
+
+.icon-electro1:before {
+  content: "\e601";
+}
+
+.icon-geo:before {
+  content: "\e602";
+}
+
+.icon-pyro:before {
+  content: "\e603";
+}
+
